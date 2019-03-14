@@ -1,8 +1,10 @@
 # pyaerocom workshop at Norwegian Meteorological Institute
 
-Date: 15/03/2019
-Time: 09:00 - 16:00
-Agenda: See [here]()
+Date: 15/03/2019  
+
+Time: 09:00 - 16:00  
+
+Agenda: See [here](https://github.com/jgliss/pyaerocom-meetings/blob/master/20190315_workshop_metno/Agenda_pyaerocom_WS_20190315.pdf)  
 
 ## More information about pyaerocom
 
