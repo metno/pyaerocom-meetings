@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 28 16:23:35 2019
+
+@author: jonasg
+"""
+
+import pyaerocom as pya
+import matplotlib.pyplot as plt
+plt.close('all')
+
+obs_reader = pya.io.ReadUngridded('AeronetSunV3Lev2.daily')
+
+data = obs_reader.read(vars_to_retrieve=['ang4487aer', 'od550aer'])
+
+ax = data.plot_station_coordinates(markersize=20, color='r')
+ax = data.plot_station_coordinates(markersize=10, color='lime',
+                                   var_name='od550aer', 
+                                   start=2010, ax=ax)
+ax.set_title('Aeronet stations AOD 2010')
+ax.figure.savefig('output/AeronetStations.png')
+
+modis = pya.io.ReadGridded('MODIS6.aqua').read_var('od550aer', start=2010)
+
+fig1 = modis.quickplot_map(180, add_zero=True, c_under='w')
+fig1.savefig('output/MODIS_AOD_map_example.png')
