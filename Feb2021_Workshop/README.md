@@ -1,6 +1,10 @@
 # MET Norway Spring 2021 pyaerocom workshop
 
-Workshop theme: running the web evaluation tools.
+**Workshop theme:** running the web evaluation tools.
+## About the workshop:
+
+The focus of this workshop will be on setting up and running the web evaluation tools that feed the AeroVal website (https://aerocom-evaluation.met.no/).
+As a result, an introduction into the general API of pyaerocom will be kept short.
 
 ## Participants and working groups
 
