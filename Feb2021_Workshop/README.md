@@ -24,7 +24,7 @@ The following command installs the latest pyaerocom release (and all requirement
 environment ([conda environments ???](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)):
 
 ```bash
-conda create -c conda-forge --name pya pyaerocom
+conda create -c conda-forge --name pya pyaerocom jupyterlab
 ```
 
 After the installation is complete, activate the environment via:
