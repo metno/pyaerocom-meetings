@@ -1,17 +1,6 @@
 # MET Norway Spring 2021 pyaerocom workshop
 
-**Workshop theme:** running the web evaluation tools.
-
-## About the workshop:
-
-The focus of this workshop will be on setting up and running the web evaluation tools that feed the AeroVal website (https://aerocom-evaluation.met.no/).
-As a result, an introduction into the general API of pyaerocom will be kept short.
-
-#### Pre-remarks:
-
-A basic knowledge of the Python programming language and git is highly recommended. It is beneficial to be familiar with common Python libraries such as numpy, pandas and scipy as well as libraries for reading of and working with model data (e.g. NetCDF4, iris, xarray). Further, it will be helpful to be familiar with jupyter notebooks.
-
-It will also be very beneficial to be familiar with the conda python packaging manager (comes with installation of Anaconda or miniconda Python distributions).
+Workshop theme: running the web evaluation tools.
 
 ## Participants and working groups
 
@@ -31,7 +20,7 @@ It is highly recommended for each participant, to go through the following instr
 
 [conda ???](https://docs.conda.io/en/latest/)
 
-The following command installs the latest pyaerocom release (and all requirements) into a new conda
+The following command installs the latest pyaerocom release (and all requirements) + jupyterlab into a new conda
 environment ([conda environments ???](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)):
 
 ```bash
