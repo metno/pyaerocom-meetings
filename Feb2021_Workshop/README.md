@@ -20,13 +20,9 @@ It is highly recommended for each participant, to go through the following instr
 
 [conda ???](https://docs.conda.io/en/latest/)
 
-<<<<<<< HEAD
 The following command installs the latest pyaerocom release (and all requirements) + jupyterlab into a new conda
-environment ([conda environments ???](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)):
-=======
-The following command installs the latest pyaerocom release (and all requirements) into a new conda
-environment ([conda environments ???](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)), called `pya`:
->>>>>>> 23e078c29a6c9ba07857f6ca546c68d02a1f1325
+environment called pya ([conda environments ???](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)):
+
 
 ```bash
 conda create -c conda-forge -n pya pyaerocom jupyterlab
@@ -39,7 +35,7 @@ conda activate pya
 jupyter lab
 ```
 
-That's it. 
+That's it.
 
 ### Getting started with pyaerocom
 
