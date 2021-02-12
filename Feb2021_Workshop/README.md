@@ -41,13 +41,13 @@ git clone git@github.com:metno/pyaerocom-meetings.git
   git clone git@gitlab.met.no:aerocom-evaluation/web.git
   ```
 
-- `data` repo:
+2. `data` repo:
 
   ```bash
   git clone git@gitlab.met.no:aerocom-evaluation/data.git
   ```
 
-- workshop project submodule:
+3. workshop project submodule:
 
   To be cloned into `data` repo, so please clean `data first`. Then:
 
