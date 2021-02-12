@@ -16,6 +16,46 @@ It is highly recommended for each participant, to go through the following instr
 
 **Please do not hesitate** to contact us if something is unclear or does not work.
 
+### Install php on your local computer
+
+```bash
+sudo apt update
+sudo apt install php
+```
+
+### Required GitLab / GitHub repositories
+
+Please clone the following repositories into the same directory on your local computer:
+
+#### pyaerocom-meetings repository:
+
+```bash
+git clone git@github.com:metno/pyaerocom-meetings.git
+```
+
+#### AeroVal Gitlab repositories
+
+1. `web` repo (contains code for web rendering):
+
+  ```bash
+  git clone git@gitlab.met.no:aerocom-evaluation/web.git
+  ```
+
+2. `data` repo:
+
+  ```bash
+  git clone git@gitlab.met.no:aerocom-evaluation/data.git
+  ```
+
+3. workshop project submodule:
+
+  To be cloned into `data` repo, so please clean `data first`. Then:
+
+  ```bash
+  cd data/json
+  git clone SUBMODULE_URL
+  ```
+
 ### Installing pyaerocom (assuming you use conda as package manager)
 
 [conda ???](https://docs.conda.io/en/latest/)
