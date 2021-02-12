@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# colocated data Feb 2021 workshop
+Feb2021_Workshop/coldata
