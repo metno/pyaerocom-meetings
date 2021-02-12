@@ -25,16 +25,36 @@ sudo apt install php
 
 ### Required GitLab / GitHub repositories
 
-Please clone the following 3 repositories into the same directory on your local computer:
+Please clone the following repositories into the same directory on your local computer:
 
-- pyaerocom-meetings repository:
+#### pyaerocom-meetings repository:
+
+```bash
+git clone git@github.com:metno/pyaerocom-meetings.git
+```
+
+#### AeroVal Gitlab repositories
+
+1. `web` repo (contains code for web rendering):
 
   ```bash
-  git clone git@github.com:metno/pyaerocom-meetings.git
+  git clone git@gitlab.met.no:aerocom-evaluation/web.git
   ```
 
+- `data` repo:
 
+  ```bash
+  git clone git@gitlab.met.no:aerocom-evaluation/data.git
+  ```
 
+- workshop project submodule:
+
+  To be cloned into `data` repo, so please clean `data first`. Then:
+
+  ```bash
+  cd data/json
+  git clone SUBMODULE_URL
+  ```
 
 ### Installing pyaerocom (assuming you use conda as package manager)
 
