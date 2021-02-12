@@ -16,6 +16,26 @@ It is highly recommended for each participant, to go through the following instr
 
 **Please do not hesitate** to contact us if something is unclear or does not work.
 
+### Install php on your local computer
+
+```bash
+sudo apt update
+sudo apt install php
+```
+
+### Required GitLab / GitHub repositories
+
+Please clone the following 3 repositories into the same directory on your local computer:
+
+- pyaerocom-meetings repository:
+
+  ```bash
+  git clone git@github.com:metno/pyaerocom-meetings.git
+  ```
+
+
+
+
 ### Installing pyaerocom (assuming you use conda as package manager)
 
 [conda ???](https://docs.conda.io/en/latest/)
