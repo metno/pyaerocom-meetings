@@ -43,21 +43,17 @@ git clone https://github.com/metno/pyaerocom-meetings.git
 **NOTE**: you need to be connected via VPN to be able to access the following GitLab repos:
 
 1. `web` repo (contains code for web rendering):  
-
   ```bash
   git clone git@gitlab.met.no:aerocom-evaluation/web.git
   ```
 
-2. `data` repo:
-
+2. `data` repo:  
   ```bash
   git clone git@gitlab.met.no:aerocom-evaluation/data.git
   ```
 
-3. `workshop2021` project submodule:
-
-  This is to be cloned into `data` repo, so please clean `data` first. Then:
-
+3. `workshop2021` project submodule:  
+  This is to be cloned into `data` repo, so please clean `data` first. Then:  
   ```bash
   cd data/json
   git clone git@gitlab.met.no:aerocom-evaluation/workshop2021.git
