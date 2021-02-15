@@ -1,6 +1,8 @@
 # MET Norway Spring 2021 pyaerocom workshop
 
-Workshop theme: running the web evaluation tools.
+## Preparations
+
+Please see [technical setup](https://github.com/metno/pyaerocom-meetings/tree/master/Feb2021_Workshop#technical-setup) below.
 
 ## Participants and working groups
 
@@ -12,7 +14,7 @@ See here: https://docs.google.com/document/d/1iGBjMBwvkqfdboJV5r2bOKv25NgSFs5i01
 
 ## Technical setup
 
-It is highly recommended for each participant, to go through the following instructions before the workshop.
+It is highly recommended to go through the following instructions before the workshop.
 
 **Please do not hesitate** to contact us if something is unclear or does not work.
 
