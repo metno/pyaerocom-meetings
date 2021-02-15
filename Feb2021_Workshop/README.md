@@ -79,6 +79,18 @@ jupyter lab
 
 That's it.
 
+#### Installing latest development version of pyaerocom
+
+The standard installation will install the latest release of pyaerocom, which corresponds roughly to Nov 2020. If you want to use the latest developments from any of the development branches, you need to install pyaerocom from source. To install a development version of pyaerocom into a new conda environment (named `pyadev`) you can do the following (here, the `main-dev` branch is installed):
+
+```bash
+git clone git@github.com:metno/pyaerocom.git
+cd pyaerocom
+git checkout main-dev
+conda env create -n pyadev -f pyaerocom_env.yml
+python setup.py install
+```
+
 ### Getting started with pyaerocom
 
 For a brief introduction into the technical setup and pyaerocom basic API see notebook [setup_and_intro.ipynb](https://github.com/jgliss/pyaerocom-meetings/blob/master/Feb2021_Workshop/setup_and_intro.ipynb).
