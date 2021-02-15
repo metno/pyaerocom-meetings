@@ -4,12 +4,6 @@
 
 Please see [technical setup](https://github.com/metno/pyaerocom-meetings/tree/master/Feb2021_Workshop#technical-setup) below.
 
-## Example notebooks
-
-- [setup_and_intro.ipynb](): Introduction into technical setup, pyaerocom API and co-location routines (**uses data located on PPI via VPN**).
-- [example_webeval.ipynb](): Introduction into web evaluation tools including minimal example experiment (**uses data located on PPI via VPN**).
-- [example_webeval_local.ipynb](): Introduction into web evaluation tools including minimal example experiment (**uses data located on local machine**).
-
 
 ## Participants and working groups
 
@@ -119,6 +113,8 @@ That's it.
 
 #### Installing latest development version of pyaerocom
 
+**NOTE**: this is only relevant for those who want to use recently developed features of pyaerocom, which are not included in the latest official release.
+
 The standard installation will install the latest release of pyaerocom, which corresponds roughly to Nov 2020. If you want to use the latest developments from any of the development branches, you need to install pyaerocom from source. To install a development version of pyaerocom into a new conda environment (named `pyadev`) you can do the following (here, the `main-dev` branch is installed):
 
 ```bash
@@ -129,6 +125,10 @@ conda env create -n pyadev -f pyaerocom_env.yml
 python setup.py install
 ```
 
-### Getting started with pyaerocom
+## Getting started - Example notebooks
 
-For a brief introduction into the technical setup and pyaerocom basic API see notebook [setup_and_intro.ipynb](https://github.com/jgliss/pyaerocom-meetings/blob/master/Feb2021_Workshop/setup_and_intro.ipynb).
+This folder contains the following example notebooks, which will also be discussed during the workshop, but feel free to take a look, in order to test your technical setup.
+
+- **setup_and_intro.ipynb**: Introduction into technical setup, pyaerocom API and co-location routines (**uses data located on PPI via VPN**).
+- **example_webeval.ipynb**: Introduction into web evaluation tools including minimal example experiment (**uses data located on PPI via VPN**).
+- **example_webeval_local.ipynb**: (COMING SOON) Introduction into web evaluation tools including minimal example experiment (**uses data located on local machine**).
