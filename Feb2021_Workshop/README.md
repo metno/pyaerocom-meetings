@@ -20,6 +20,8 @@ It is highly recommended to go through the following instructions before the wor
 
 ### Install php on your local computer
 
+This is needed to run a local version of the [AeroVal](https://aerocom-evaluation.met.no/) web interface.
+
 ```bash
 sudo apt update
 sudo apt install php
