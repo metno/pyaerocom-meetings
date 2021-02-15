@@ -35,6 +35,8 @@ git clone git@github.com:metno/pyaerocom-meetings.git
 
 #### AeroVal Gitlab repositories
 
+**NOTE**: you need to be connected via VPN to be able to access the following GitLab repos:
+
 1. `web` repo (contains code for web rendering):
 
   ```bash
@@ -53,7 +55,7 @@ git clone git@github.com:metno/pyaerocom-meetings.git
 
   ```bash
   cd data/json
-  git clone SUBMODULE_URL
+  git clone git@gitlab.met.no:aerocom-evaluation/workshop2021.git
   ```
 
 ### Installing pyaerocom (assuming you use conda as package manager)
