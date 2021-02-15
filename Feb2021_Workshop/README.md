@@ -86,9 +86,18 @@ mkdir lustre
 sshfs <username>@xvis-m4a:/lustre lustre
 ```
 
+### Install miniconda on your computer
+
+Only needed if you don't have anaconda on your computer already: 
+
+```bash
+cd ~/tmp
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+
 ### Installing pyaerocom (assuming you use conda as package manager)
 
-[conda ???](https://docs.conda.io/en/latest/)
 
 The following command installs the latest pyaerocom release (and all requirements) + jupyterlab into a new conda
 environment called pya ([conda environments ???](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)):
