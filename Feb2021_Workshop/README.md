@@ -127,6 +127,7 @@ git clone https://github.com/metno/pyaerocom.git
 cd pyaerocom
 git checkout main-dev
 conda env create -n pyadev -f pyaerocom_env.yml
+conda activate pyadev
 python setup.py install
 ```
 
