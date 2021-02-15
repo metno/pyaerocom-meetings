@@ -69,7 +69,7 @@ In order to work locally, you will need to have access to the model and obs data
 
 #### If you have sudo rights on your laptop:
 
-The recommended way is touse the following command(s) to mount storeA and / or storeB locally:
+The recommended way is to use the following command(s) to mount storeA and / or storeB locally:
 
 ```bash
 cd 
