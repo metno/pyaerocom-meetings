@@ -139,6 +139,6 @@ We prepared a copy of EBAS, GHOST and AERONET data in a tarball, which you can d
 cd ~/MyPyaerocom
 rsync -av <username>@xvis-m4a:/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/PYAEROCOM/ws21_19GB.tar.gz .
 tar -xzvf ws21_19GB.tar.gz
-rm -r ws21_obs_19GB.tar.gz
+rm -r ws21_19GB.tar.gz
 ```
 The extracted directory contains sub-directories for AERONET, EBAS and GHOST data. Note that GHOST is only available for 2018 and 2019.
