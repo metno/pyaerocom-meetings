@@ -42,7 +42,7 @@ git clone https://github.com/metno/pyaerocom-meetings.git
 
 **NOTE**: you need to be connected via VPN to be able to access the following GitLab repos:
 
-1. `web` repo (contains code for web rendering):
+1. `web` repo (contains code for web rendering):  
 
   ```bash
   git clone git@gitlab.met.no:aerocom-evaluation/web.git
