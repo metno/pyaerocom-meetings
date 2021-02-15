@@ -53,7 +53,7 @@ git clone https://github.com/metno/pyaerocom-meetings.git
   ```
 
 3. `workshop2021` project submodule:  
-  This is to be cloned into `data` repo, so please clean `data` first. Then:  
+  This is to be cloned into `data` repo, so please clone `data` first. Then:  
   ```bash
   cd data/json
   git clone git@gitlab.met.no:aerocom-evaluation/workshop2021.git
