@@ -56,7 +56,7 @@ git clone https://github.com/metno/pyaerocom-meetings.git
 
 3. workshop project submodule:
 
-  To be cloned into `data` repo, so please clean `data first`. Then:
+  To be cloned into `data` repo, so please clean `data` first. Then:
 
   ```bash
   cd data/json
