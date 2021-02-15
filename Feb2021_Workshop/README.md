@@ -128,3 +128,17 @@ This folder contains the following example notebooks, which will also be discuss
 - **setup_and_intro.ipynb**: Introduction into technical setup, pyaerocom API and co-location routines (**uses data located on PPI via VPN**).
 - **example_webeval.ipynb**: Introduction into web evaluation tools including minimal example experiment (**uses data located on PPI via VPN**).
 - **example_webeval_local.ipynb**: (COMING SOON) Introduction into web evaluation tools including minimal example experiment (**uses data located on local machine**).
+
+## Speedup - create a local copy of relevant obsdata 
+
+**NOTE:** this will require 20GB of disk space on your computer (or on an external disk)!
+
+We prepared a copy of EBAS, GHOST and AERONET data in a tarball, which you can download to speedup reading of obsdata (which is slow via VPN, i.e. if you use a local pyaerocom installation). The tarball is available at `/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/PYAEROCOM/ws21_19GB.tar.gz`. You may use the following commands to download and and extract the data into a local directory of your choice (here ~/MyPyaerocom is used):
+
+```bash
+cd ~/MyPyaerocom
+rsync -av <username>@xvis-m4a:/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/PYAEROCOM/ws21_19GB.tar.gz .
+tar -xzvf ws21_19GB.tar.gz
+rm -r ws21_obs_19GB.tar.gz
+```
+The extracted directory contains sub-directories for AERONET, EBAS and GHOST data. Note that GHOST is only available for 2018 and 2019.
