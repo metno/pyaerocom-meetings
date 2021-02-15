@@ -4,6 +4,13 @@
 
 Please see [technical setup](https://github.com/metno/pyaerocom-meetings/tree/master/Feb2021_Workshop#technical-setup) below.
 
+## Example notebooks
+
+- [setup_and_intro.ipynb](): Introduction into technical setup, pyaerocom API and co-location routines (**uses data located on PPI via VPN**).
+- [example_webeval.ipynb](): Introduction into web evaluation tools including minimal example experiment (**uses data located on PPI via VPN**).
+- [example_webeval_local.ipynb](): Introduction into web evaluation tools including minimal example experiment (**uses data located on local machine**).
+
+
 ## Participants and working groups
 
 See here: https://docs.google.com/spreadsheets/d/1M1r18DE-7BEVBO077sWNfprlvppir3Exo6vikE2yCxo/edit#gid=0
@@ -34,7 +41,7 @@ Please clone the following repositories into the same directory on your local co
 #### pyaerocom-meetings repository:
 
 ```bash
-git clone git@github.com:metno/pyaerocom-meetings.git
+git clone https://github.com/metno/pyaerocom-meetings.git
 ```
 
 #### AeroVal Gitlab repositories
@@ -61,6 +68,33 @@ git clone git@github.com:metno/pyaerocom-meetings.git
   cd data/json
   git clone git@gitlab.met.no:aerocom-evaluation/workshop2021.git
   ```
+
+### Mount PPI locally
+
+In order to work locally, you will need to have access to the model and obs data on lustre (storeA and / or storeB). When pyaerocom is imported it will try to see if lustre is mounted, either in root `/` or in the user home `~` directory. Thus, it is recommended to mount `/lustre/storeA` and / or `/lustre/storeB` into your home directory `~`. To do that, you have 2 options:
+
+#### If you have sudo rights on your laptop:
+
+The recommended way is touse the following command(s) to mount storeA and / or storeB locally:
+
+```bash
+cd 
+mkdir lustre
+mkdir lustre/storeA
+mkdir lustre/storeB
+sudo mount -t cifs //cifs-int-gw-a.met.no/storeA lustre/storeA -o username=<username>
+sudo mount -t cifs //cifs-int-gw-b.met.no/storeB lustre/storeB -o username=<username>
+```
+
+#### Without sudo rights:
+
+If you do not have sudo rights, you can mount via sshfs command: 
+
+```bash
+cd 
+mkdir lustre
+sshfs <username>@xvis-m4a:/lustre lustre
+```
 
 ### Installing pyaerocom (assuming you use conda as package manager)
 
