@@ -54,7 +54,7 @@ git clone https://github.com/metno/pyaerocom-meetings.git
   git clone git@gitlab.met.no:aerocom-evaluation/data.git
   ```
 
-3. workshop project submodule:
+3. `workshop2021` project submodule:
 
   To be cloned into `data` repo, so please clean `data` first. Then:
 
