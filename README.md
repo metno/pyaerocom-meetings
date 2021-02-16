@@ -9,6 +9,6 @@ Material and more info: https://github.com/metno/pyaerocom-meetings/tree/master/
 
 ## Past workshops
 
-- Winter / Sprint 2019 workshop, [see here](https://github.com/metno/pyaerocom-meetings/tree/master/20190315_workshop_metno) for details and material.
+- Winter / Spring 2019 workshop, [see here](https://github.com/metno/pyaerocom-meetings/tree/master/20190315_workshop_metno) for details and material.
 
 

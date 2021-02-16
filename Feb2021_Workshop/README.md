@@ -129,6 +129,7 @@ git checkout main-dev
 conda env create -n pyadev -f pyaerocom_env.yml
 conda activate pyadev
 python setup.py install
+conda install jupyterlab
 ```
 
 ## Getting started - Example notebooks
