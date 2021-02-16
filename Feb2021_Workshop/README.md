@@ -153,3 +153,21 @@ tar -xzvf ws21_19GB.tar.gz
 rm -r ws21_19GB.tar.gz
 ```
 The extracted directory contains sub-directories for AERONET, EBAS and GHOST data. Note that GHOST is only available for 2018 and 2019.
+
+## Running a local webserver
+
+In order to visualize the results you have computed locally on your computer, you can visualize it on a local webserver thanks to php.
+First, go in the directory corresponding to the web repository:
+```
+cd aerocomevaluation/web
+```
+Then, run the following command:
+```
+augustinm@pc5104:~/Dev/aerocomevaluation/web$ php -S localhost:8000
+PHP 7.3.26-1+ubuntu18.04.1+deb.sury.org+1 Development Server started at Tue Feb 16 11:33:16 2021
+Listening on http://localhost:8000
+Document root is /home/augustinm/Dev/aerocomevaluation/web
+```
+As mentionned in the output, the local server is available at the following adress: [http://localhost:8000](http://localhost:8000)
+
+**NOTE**: you must leave your terminal opened in order to keep the local webserver running. 
