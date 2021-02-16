@@ -44,19 +44,19 @@ git clone https://github.com/metno/pyaerocom-meetings.git
 
 1. `web` repo (contains code for web rendering):  
   ```bash
-  git clone git@gitlab.met.no:aerocom-evaluation/web.git
+  git clone https://gitlab.met.no/aerocom-evaluation/web.git
   ```
 
 2. `data` repo:  
   ```bash
-  git clone git@gitlab.met.no:aerocom-evaluation/data.git
+  git clone https://gitlab.met.no/aerocom-evaluation/data.git
   ```
 
 3. `workshop2021` project submodule:  
   This is to be cloned into `data` repo, so please clone `data` first. Then:  
   ```bash
   cd data/json
-  git clone git@gitlab.met.no:aerocom-evaluation/workshop2021.git
+  git clone https://gitlab.met.no/aerocom-evaluation/workshop2021.git
   ```
 
 ### Mount PPI locally
