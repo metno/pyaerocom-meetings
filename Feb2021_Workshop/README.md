@@ -148,7 +148,7 @@ We prepared a copy of EBAS, GHOST and AERONET data in a tarball, which you can d
 
 ```bash
 cd ~/MyPyaerocom
-rsync -av <username>@xvis-m4a:/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/PYAEROCOM/ws21_19GB.tar.gz .
+rsync -av --progress xvis-m4a:/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/PYAEROCOM/ws21_19GB.tar.gz .
 tar -xzvf ws21_19GB.tar.gz
 rm -r ws21_19GB.tar.gz
 ```
