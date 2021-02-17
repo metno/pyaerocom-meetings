@@ -1,6 +1,6 @@
 # Run the evaluation on PPI
 
-There are two main reasons for preferring to run your evaluation on PPI instead of your local machine, transfer time over the network and memory. Some model files are very large and transferring all that data over the network is a significant time sink. Some observational data sets ar eso large that the memory on your laptop becomes a limiting factor. In these cases you need to run the analysis on PPI.
+There are two main reasons for preferring to run your evaluation on PPI instead of your local machine, transfer time over the network and memory. Some model files are very large and transferring all that data over the network is a significant time sink. Some observational data sets are so large that the memory on your laptop becomes a limiting factor. In these cases you need to run the analysis on PPI.
 
 ## Log in to PPI
 Remember that you have to be on the VPN
