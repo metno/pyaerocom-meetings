@@ -3,7 +3,10 @@
 There are two main reasons for preferring to run your evaluation on PPI instead of your local machine, transfer time over the network and memory. Some model files are very large and transferring all that data over the network is a significant time sink. Some observational data sets ar eso large that the memory on your laptop becomes a limiting factor. In these cases you need to run the analysis on PPI.
 
 ## Log in to PPI
-`$ ssh -X <username>@xvis-m4a`
+Remember that you have to be on the VPN
+```
+$ ssh -X <username>@xvis-m4a
+```
 
 After logging in, activate the module with pyaerocom installed and activate the `pya` envirnoment in conda:
 
