@@ -64,6 +64,7 @@ $ php -S localhost:8000
 1. Since you have mounted PPI locally the easiest way to transfer config files from your local work space to PPI is to just copy them.
 2. If you want you can open your PPI config files using spyder or your preferred editor on you laptop to do changes.
 3. You can even run/debug your remote files on your laptop (with a performance hit).
+4. If you need to use the newest functionality in `pyaerocom` or combine `pyaerocom` functions with other `Python` modules not installed in the standard setup you can install your own miniconda distribution in `/home/<username>/` on PPI.
 
 ## Config file
 ```python
