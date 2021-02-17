@@ -29,8 +29,40 @@ This particular setup is light enough that i can be run on the login node of PPI
 ```
 $ qlogin -pe mpi 1 -q ded-parallelx.q -l h_vmem=30G -l h_rt=1:00:00
 ```
-Here `-pe mpi 1` tells `qlogin` that we want one one processor and `-q ded-parallelx.q` is the queue we want to use (different options are available here including `research-bionic.q` and `research-el7.q`). The other options tells the machine we want 30 GB og memory and that the process is allowed to run for a maximum of 1 hour.
+Here `-pe mpi 1` tells `qlogin` that we want one one processor and `-q ded-parallelx.q` is the queue we want to use (different options are available here including `research-bionic.q` and `research-el7.q` etc. with slightly different setups). The other options tells the machine we want 30 GB og memory and that the process is allowed to run for a maximum of 1 hour.
 
+After running the `qlogin` command, we get a new login prompt asking for username and password. After logging in we are on a compute node. It look like this
+```
+<username>@c6220ii-4pz1zz1-ao-compute:
+```
+If you are inactive for too long here you get kicked out, so if you need to think about what to do run `tail -f`. This does nothing, but the machine thinks you are doing something. Activate the pyaerocom envirnoment. If you do this often I recommend adding these commands to your `/home/<username>/.bashrc` file so it is set up automatically every time you log in.
+
+```
+$ module load aerocom/anaconda3-stable
+$ conda activate pya
+```
+Move to where you cloned the `web` and `data` repositories and go to config files:
+```
+$ cd data/config_files
+```
+If everything is set up correctly you can run the config file using python now:
+```
+$ python cfg_webeval_on_ppi.py
+```
+## Visualizing the results
+Since we have mounted PPI on our machines we can navigate to the `web` repository directory from our local machine and run the local web server. For me it looks like this when I'm in $HOME:
+```
+<username>@laptop:~$ cd lustre/storeA/project/fou/kl/CAMS61/pyaerocom_Feb21_meeting/web/
+
+$ php -S localhost:8000
+```
+
+## Some tips
+1. Since you have mounted PPI locally the easiest way to transfer config files from your local work space to PPI is to just copy them.
+2. If you want you can open your PPI config files using spyder or your preferred editor on you laptop to do changes.
+3. You can even run/debug your remote files on your laptop (with a performance hit).
+
+## Config file
 ```python
 import os
 import pyaerocom as pya
