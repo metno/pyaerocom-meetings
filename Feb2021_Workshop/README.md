@@ -30,7 +30,7 @@ sudo apt install php
 
 ### Required GitLab / GitHub repositories
 
-Please clone the following repositories into the same directory on your local computer:
+Please clone the following repositories into the same directory on your local computer.
 
 #### pyaerocom-meetings repository:
 
@@ -40,7 +40,7 @@ git clone https://github.com/metno/pyaerocom-meetings.git
 
 #### AeroVal Gitlab repositories
 
-**NOTE**: you need to be connected via VPN to be able to access the following GitLab repos:
+**NOTE**: you need to be connected via VPN to be able to access the following GitLab repos.
 
 You can clone with SSH or via https links, for the former (SSH) you may need to provide your SSH key in GitLab under Settings -> SSH Keys. Cloning via https should work out of the box but you will need to provide your credentials whenever you push or pull.
 
