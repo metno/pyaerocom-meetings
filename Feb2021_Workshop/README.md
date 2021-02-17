@@ -42,6 +42,29 @@ git clone https://github.com/metno/pyaerocom-meetings.git
 
 **NOTE**: you need to be connected via VPN to be able to access the following GitLab repos:
 
+You can clone with SSH or via https links, for the former (SSH) you may need to provide your SSH key in GitLab under Settings -> SSH Keys. Cloning via https should work out of the box but you will need to provide your credentials whenever you push or pull.
+
+##### EITHER (via SSH):
+
+1. `web` repo (contains code for web rendering):  
+  ```bash
+  git clone git@gitlab.met.no:aerocom-evaluation/web.git
+  ```
+
+2. `data` repo:  
+  ```bash
+  git clone git@gitlab.met.no:aerocom-evaluation/data.git
+  ```
+
+3. `workshop2021` project submodule:  
+  This is to be cloned into `data` repo, so please clone `data` first. Then:  
+  ```bash
+  cd data/json
+  git clone git@gitlab.met.no:aerocom-evaluation/workshop2021.git
+  ```
+
+##### OR (via https):
+
 1. `web` repo (contains code for web rendering):  
   ```bash
   git clone https://gitlab.met.no/aerocom-evaluation/web.git
@@ -58,7 +81,7 @@ git clone https://github.com/metno/pyaerocom-meetings.git
   cd data/json
   git clone https://gitlab.met.no/aerocom-evaluation/workshop2021.git
   ```
-
+  
 ### Mount PPI locally
 
 In order to work locally, you will need to have access to the model and obs data on lustre (storeA and / or storeB). When pyaerocom is imported it will try to see if lustre is mounted, either in root `/` or in the user home `~` directory. Thus, it is recommended to mount `/lustre/storeA` and / or `/lustre/storeB` into your home directory `~`. To do that, you have 2 options:
