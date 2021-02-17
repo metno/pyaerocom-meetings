@@ -138,7 +138,7 @@ This folder contains the following example notebooks, which will also be discuss
 
 - **setup_and_intro.ipynb**: Introduction into technical setup, pyaerocom API and co-location routines (**uses data located on PPI via VPN**).
 - **example_webeval.ipynb**: Introduction into web evaluation tools including minimal example experiment (**uses data located on PPI via VPN**).
-- **example_webeval_local.ipynb**: (COMING SOON) Introduction into web evaluation tools including minimal example experiment (**uses data located on local machine**).
+- **example_webeval_local.ipynb**: Introduction into web evaluation tools including minimal example experiment (**uses obs data located on local machine, see next section**).
 
 ## Speedup - create a local copy of relevant obsdata 
 
