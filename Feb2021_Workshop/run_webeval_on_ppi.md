@@ -11,8 +11,8 @@ $ ssh -X <username>@xvis-m4a
 After logging in, activate the module with pyaerocom installed and activate the `pya` envirnoment in conda:
 
 ```
-$ module load aerocom/anaconda3-stable
-$ conda activate pya
+$ module load aerocom/anaconda3-stable #This is not right
+$ conda activate pya                   #This is not right
 ```
 
 ## "Duplicate" the setup on your local machine
