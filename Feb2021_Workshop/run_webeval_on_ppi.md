@@ -5,14 +5,14 @@ There are two main reasons for preferring to run your evaluation on PPI instead 
 ## Log in to PPI
 Remember that you have to be on the VPN
 ```
-$ ssh -X <username>@xvis-m4a
+$ ssh -Y <username>@ppi-clogin-a1.met.no
 ```
 
 After logging in, activate the module with pyaerocom installed and activate the `pya` envirnoment in conda:
 
 ```
-$ module load aerocom/anaconda3-stable #This is not right
-$ conda activate pya                   #This is not right
+$ module load aerocom/anaconda3-stable
+$ conda activate pyaerocom-release
 ```
 
 ## "Duplicate" the setup on your local machine
@@ -30,19 +30,19 @@ In the `data` repository there is a config file version of the simple setup from
 
 This particular setup is light enough that i can be run on the login node of PPI. For a heavier setup you need to request a compute node. The easiest way is with the `qlogin` command:
 ```
-$ qlogin -pe mpi 1 -q ded-parallelx.q -l h_vmem=30G -l h_rt=1:00:00
+$ qlogin -pe mpi 1 -q research-el7.q -l h_vmem=30G -l h_rt=1:00:00
 ```
-Here `-pe mpi 1` tells `qlogin` that we want one one processor and `-q ded-parallelx.q` is the queue we want to use (different options are available here including `research-bionic.q` and `research-el7.q` etc. with slightly different setups). The other options tells the machine we want 30 GB og memory and that the process is allowed to run for a maximum of 1 hour.
+Here `-pe mpi 1` tells `qlogin` that we want one one processor and `-q ded-parallelx.q` is the queue we want to use (different options are available here including `research-bionic.q` and `ded-parallelx.q` etc. with slightly different setups). The other options tells the machine we want 30 GB og memory and that the process is allowed to run for a maximum of 1 hour.
 
 After running the `qlogin` command, we get a new login prompt asking for username and password. After logging in we are on a compute node. It look like this
 ```
-<username>@c6220ii-4pz1zz1-ao-compute:
+<username>@<gibberish>-compute:
 ```
 If you are inactive for too long here you get kicked out, so if you need to think about what to do run `tail -f`. This does nothing, but the machine thinks you are doing something. Activate the pyaerocom envirnoment. If you do this often I recommend adding these commands to your `/home/<username>/.bashrc` file so it is set up automatically every time you log in.
 
 ```
 $ module load aerocom/anaconda3-stable
-$ conda activate pya
+$ conda activate pyaerocom-release
 ```
 Move to where you cloned the `web` and `data` repositories and go to config files:
 ```
