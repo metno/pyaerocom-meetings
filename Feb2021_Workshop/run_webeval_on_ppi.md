@@ -30,9 +30,9 @@ In the `data` repository there is a config file version of the simple setup from
 
 This particular setup is light enough that i can be run on the login node of PPI. For a heavier setup you need to request a compute node. The easiest way is with the `qlogin` command:
 ```
-$ qlogin -pe mpi 1 -q research-el7.q -l h_vmem=30G -l h_rt=1:00:00
+$ qlogin -pe shmem-1 1 -q research-el7.q -l h_vmem=30G -l h_rt=1:00:00
 ```
-Here `-pe mpi 1` tells `qlogin` that we want one one processor and `-q ded-parallelx.q` is the queue we want to use (different options are available here including `research-bionic.q` and `ded-parallelx.q` etc. with slightly different setups). The other options tells the machine we want 30 GB og memory and that the process is allowed to run for a maximum of 1 hour.
+Here `-pe shmem-1 1` tells `qlogin` that we want one one processor and `-q ded-parallelx.q` is the queue we want to use (different options are available here including `research-bionic.q` and `ded-parallelx.q` etc. with slightly different setups). The other options tells the machine we want 30 GB og memory and that the process is allowed to run for a maximum of 1 hour.
 
 After running the `qlogin` command, we get a new login prompt asking for username and password. After logging in we are on a compute node. It look like this
 ```
@@ -65,6 +65,25 @@ $ php -S localhost:8000
 2. If you want you can open your PPI config files using spyder or your preferred editor on you laptop to do changes.
 3. You can even run/debug your remote files on your laptop (with a performance hit).
 4. If you need to use the newest functionality in `pyaerocom` or combine `pyaerocom` functions with other `Python` modules not installed in the standard setup you can install your own miniconda distribution in `/home/<username>/` on PPI.
+
+## Stop using conda
+If you need to stop using conda completely comment out the following lines in your `.bashrc` in `/home/<username>` and restart your shell:
+```
+# >>> conda initialize >>>                                                                                                                                                                                  
+# !! Contents within this block are managed by 'conda init' !!                                                                                                                                              
+__conda_setup="$('/modules/centos7/user-apps/aerocom/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/modules/centos7/user-apps/aerocom/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/modules/centos7/user-apps/aerocom/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/modules/centos7/user-apps/aerocom/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<< 
+```
 
 ## Config file
 ```python
